@@ -17,7 +17,6 @@ while True:
         for num in range(len(r['clan']['members'])):
             try:
                 if len(r['clan']['members'][num]['attacks']) != 2:
-                    print(len(r['clan']['members'][num]['attacks']))
                     needToAttack.append(r['clan']['members'][num]['name']+":"+"1")
             except:
                 needToAttack.append(r['clan']['members'][num]['name']+":"+"2")
